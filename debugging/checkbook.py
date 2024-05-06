@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class Checkbook:
     """
     Represents a simple checkbook allowing deposits,
