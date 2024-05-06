@@ -11,8 +11,7 @@ def check_winner(board):
             return True
 
     for col in range(len(board[0])):
-        if board[0][col] == board[1][col] ==
-        board[2][col] and board[0][col] != " ":
+        if board[0][col] == board[1][col] == board[2][col] and board[0][col] != " ":
             return True
 
     if board[0][0] == board[1][1] == board[2][2] and board[0][0] != " ":
@@ -38,10 +37,8 @@ def tic_tac_toe():
     while not check_winner(board) and not check_tie(board):
         print_board(board)
         try:
-            row = int(input
-                      ("Enter row (0, 1, or 2) for player " + player + ": "))
-            col = int(
-                input("Enter column (0, 1, or 2) for player " + player + ": "))
+            row = int(input("Enter row (0, 1, or 2) for player " + player + ": "))
+            col = int(input("Enter column (0, 1, or 2) for player " + player + ": "))
             if row not in [0, 1, 2] or col not in [0, 1, 2]:
                 print("Invalid input. Row and column must be between 0 and 2.")
                 continue
@@ -58,6 +55,5 @@ def tic_tac_toe():
         print("Player " + player + " wins!")
     else:
         print("It's a tie!")
-
 
 tic_tac_toe()

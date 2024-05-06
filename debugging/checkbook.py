@@ -66,8 +66,7 @@ def main():
     """
     cb = Checkbook()
     while True:
-        action = input("What would you like
-                       to do? (deposit, withdraw, balance, exit): ")
+        action = input("What would you like to do? (deposit, withdraw, balance, exit): ")
         if action.lower() == 'exit':
             break
         elif action.lower() == 'deposit':
